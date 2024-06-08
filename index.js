@@ -6,8 +6,10 @@ const countLikes2 = document.getElementById("countLikes2")
 const submit = document.getElementById("submit")
 const comment = document.getElementById("comment")
 const commentbox = document.getElementById("commentbox")
+
 function submitComment(){
   commentbox.textContent += comment.value.toString() + "\n"
+  comment.value=""
 }
 submit.addEventListener("click", submitComment)
 
